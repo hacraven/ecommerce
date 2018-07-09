@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  subtotal: 9.99
+  sales_tax: 9.99
+  grand_total: MyString
+
+two:
+  subtotal: 9.99
+  sales_tax: 9.99
+  grand_total: MyString
