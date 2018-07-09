@@ -24,19 +24,19 @@
                 <li><%= link_to category.name, categorical_path(category_id: category.id) %></li>
 
               <% end %>
-              <li><% link_to "All", root path %></li>
+              <li><%= link_to "All", root_path %></li>
             </ul>
           </li>
+          
           <!-- Brands -->
-           <ul class="nav navbar-nav">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Brands <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <% @brands.each do |brand| %>
-                <li><%= link_to brands, branding_path(brand_id: brand.id) %></li>
+                <li><%= link_to brand, branding_path(brand: brand) %></li>
                 
               <% end %>
-              <li><% link_to "All", root path %></li>
+              <li><%= link_to "All", root_path %></li>
             </ul>
           </li>
 

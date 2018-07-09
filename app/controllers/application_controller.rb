@@ -2,10 +2,9 @@ class ApplicationController < ActionController::Base
 	protect_from_forgery with: :exception
 
 	before_action :categories, :brands
-end
 
-def items_by_category
-end
+
+
 
 def categories
 	@categories = Category.order(:name)
@@ -16,4 +15,4 @@ def brands
 	@brands = Product.pluck(:brand).sort.uniq
 	end	
 	
-end	
+end
