@@ -1,4 +1,5 @@
 class StorefrontController < ApplicationController
+	
   def all_items
   	@products = Product.all
   end
@@ -16,4 +17,6 @@ class StorefrontController < ApplicationController
   	@products = Product.where(brand: params[:brand])
   	@brand = params[:brand]
   end
+
+
 end
