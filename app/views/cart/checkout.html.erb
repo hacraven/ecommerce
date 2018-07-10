@@ -1,2 +1,19 @@
-<h1>Cart#checkout</h1>
-<p>Find me in app/views/cart/checkout.html.erb</p>
+
+<h2>Thanks for shopping with us!</h2>
+<p>Let's review your order:</p>
+
+<!-- go thru order and go thru each order itema nd has to go thru each key(product id/name) and value(qty) -->
+<% @order.order_items.each do |k,v| %>
+ 
+ <!-- bullet point slides for each one the  for example ruby command will result in "macbook, qty"-->
+	
+	<ul>
+		<li><%= Product.find(k).name %>, <%= v %></li>
+	</ul>
+
+<% end %>
+
+<p>
+  <strong>Order Total:</strong> <%= number_to_currency @order.grand_total %>
+</p> 
+
