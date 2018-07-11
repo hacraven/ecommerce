@@ -48,14 +48,16 @@
         </ul>
         <ul class="nav navbar-nav navbar-right">
 
-          <!--added the cart--tried it above and below the link--ask how to line it up  -->
-          <li>
-          <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
-          
-            <%= link_to "View Cart", view_order_path %>
-           
+    <!-- used font awesome instead of gly for cart to fix placement issue -->
+         <li>
+          <%= link_to view_order_path do %>
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span>View Order</span>
+          <% end %>
+        </li>
 
-            </li> <!-- already here -->
+
+
 
 
             <!-- added this code from Stefanie -->
