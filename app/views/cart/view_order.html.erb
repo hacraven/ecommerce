@@ -7,6 +7,7 @@
 
 				
 			<strong><%= line_item.product.name %></strong>
+			
 			<ul>
 				<li><%= number_to_currency line_item.product.price %></li>
 				<li>Qty: <%= line_item.quantity %></li>
@@ -19,9 +20,7 @@
 </div>				
 				<%= link_to "Proceed to Checkout", checkout_path, class: "btn btn-success" %>
 
-			<div class = "btn btn-primary">Edit</div>	
-		
-			<div class = "btn btn-danger">Delete</div>
+			
  
 </div> 
 
