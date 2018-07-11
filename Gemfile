@@ -47,6 +47,10 @@ gem 'carrierwave'
 #levels of authorization/authocenteciation
 gem 'cancancan'
 
+# add the payment method
+gem 'stripe'
+gem 'figaro'
+
 #makes rails c look pretty
 gem 'hirb'
 
